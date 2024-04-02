@@ -8,7 +8,6 @@ class Task{
   String? startTime;
   String? endTime;
   int? color;
-  int? reminder;
   String? repeat;
 
   Task({
@@ -21,7 +20,6 @@ class Task{
       this.startTime,
       this.endTime,
       this.color,
-      this.reminder,
       this.repeat});
   Task.fromJson(Map<String,dynamic> json){
     taskId=json["taskId"];
@@ -33,7 +31,6 @@ class Task{
     startTime=json["startTime"];
     endTime =json["endTime"];
     color=json["color"];
-    reminder=json["reminder"];
     repeat=json["repeat"];
   }
 
@@ -48,7 +45,6 @@ class Task{
     data["startTime"]=this.startTime;
     data["endTime"]=this.endTime;
     data["color"]=this.color;
-    data["reminder"]=this.reminder;
     data["repeat"]=this.repeat;
     return data;
   }

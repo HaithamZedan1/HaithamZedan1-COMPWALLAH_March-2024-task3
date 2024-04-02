@@ -47,7 +47,6 @@ class SqlDb {
         startTime STRING NOT NULL,
         endTime STRING NOT NULL,
         color INTEGER NOT NULL,
-        reminder INTEGER NOT NULL,
         repeat STRING NOT NULL
       )
     ''');
